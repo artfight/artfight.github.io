@@ -1,0 +1,17 @@
+td {
+  vertical-align: top;
+}
+
+form {
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 15px;
+}
+
+#gore ~ #more2 {
+  display: none;
+}
+
+#gore:checked ~ #more2 {
+  display: inline;
+}

@@ -17,30 +17,31 @@
     <![endif]-->
   </head>
   <body>
-    <table>
-  <tr>
-    <td>Does this contain mature content?&nbsp;&nbsp;</td>
-    <td>
-      <form><input type="radio" name="content" value="yes" onChange="testing(1);">Yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="content" value="no" onChange="testing(2);" checked>No&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(required)
-        <span id="more" style="display:none;">
-          <hr>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check all that apply
-          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="gore" type="checkbox">Gore/Violence
+  <div class="container">
+      <table>
+      <tr>
+      <td>Does this contain mature content?&nbsp;&nbsp;</td>
+      <td>
+        <form><input type="radio" name="content" value="yes" onChange="testing(1);">Yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="content" value="no" onChange="testing(2);" checked>No&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(required)
+          <span id="more" style="display:none;">
+            <hr>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check all that apply
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="gore" type="checkbox">Gore/Violence
+            
+           
+           <span
+            id="more2">
+             <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gore">Moderate 
+            
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gore">Extreme
           
-         
-         <span
-          id="more2">
-           <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gore">Moderate 
-          
-          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gore">Extreme
-        
-          </span>
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox">Nudity
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox">Sexual Content
+            </span>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox">Nudity
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox">Sexual Content
 
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox">Other</span>
-      </form>
-
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox">Other</span>
+        </form>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>

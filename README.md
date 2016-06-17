@@ -18,4 +18,5 @@
 - PHP
 - Javascript
 - SQL (mySQL)
-- Ubuntu 14.04 server administration
+- Linux
+- server administration

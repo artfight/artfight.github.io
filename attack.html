@@ -14,31 +14,83 @@
   </head>
   <body>
     <div class="container">
-      <h1>Attack Points Form</h1>
-      <h2>Characters</h2>
-      <p>Which characters from the opposite team are in this piece?<input class="form-control" placeholder="list characters or character ids or something, separate with commas"></p>
-      <h2>If your style uses lineart</h2> 
-      <p>Level of finish <select><option>sketch</option><option>refined sketch</option><option>lineart</option><option>flats</option></select> <span class="fa fa-question-circle" data-toggle="tooltip" title="bloop"></span></p>
-      <p>Level of Shading <select><option>none</option><option>simple</option><option>complex</option></select></p>
-      <p>Background Detail <select><option>no or minimal background</option><option>simple background</option><option>simple scene</option><option>detailed scene</option></select></p>
-      <br>
-      <h2>OR</h2>
-      <br>
-      <h2>If you have a painting style</h2>
-      <p>level of finish <select><option>sketch</option><option>refined sketch</option><option>flat color</option><option>speedpaint</option><option>detailed painting</option></select></p>
-      <p>Background Detail <select><option>no or minimal background</option><option>simple background</option><option>simple scene</option><option>detailed scene</option></select></p>
-      <br>
-      <h2>OR</h2>
-      <br>
-      <h2>Pixels</h2>
-      <p>Level of finish<select><option>lines</option><option>flat color</option><option>shaded</option></select></p>
-      <p>Background Detail <select><option>no or minimal background</option><option>simple background</option><option>simple scene</option></select></p>
-      <p>Size<select><option>50x50px or less</option><option>100x100px or less</option><option>250x250px or less</option><option>larger than 250x250px</option></select></p>
-      <br>
-      <h2>AND IF</h2>
-      <br>
-      <h2>Animation</h2> <select><option>blink/bounce</option><option>other simple</option><option>complex</option></select>
+    <h1>Attack Points Form</h1>
+    <h4>Maybe we could have a "what style do you use?" question and then the options to report all you did in the piece pop up once you choose your style</h4>
+    <h2>Characters</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p>Which characters from the opposite team are in this piece?<input class="form-control" placeholder="list characters or character ids or something, separate with commas"></p>
+          <p>Amount of character shown <select><option>headshot</option><option>half body</option><option>full body</option></select></p>
+        </div>
+        <div class="col-md-6">
+        <br>
+          <blockquote>
+            x points per character, amount of character shown modifier
+          </blockquote>
+        </div>
+      </div>
 
+
+      <h2>If your style uses lineart</h2>
+      <div class="row">
+        <div class="col-md-6">
+           
+          <p>Level of finish <select><option>sketch</option><option>refined sketch</option><option>lineart</option><option>flats</option></select> <span class="fa fa-question-circle" data-toggle="tooltip" title="bloop"></span></p>
+          <p>Level of Shading <select><option>none</option><option>simple</option><option>complex</option></select></p>
+          <p>Background Detail <select><option>no or minimal background</option><option>simple background</option><option>simple scene</option><option>detailed scene</option></select></p>
+        </div>
+        <div class="col-md-6">
+        <br>
+          <blockquote>
+            <p>total points = [x(number of characters)*(amount of character shown) + (background detail)]*(level of finish)*(level of shading)</p>
+          </blockquote>
+        </div>
+      </div>
+          <br>
+          <h2>OR</h2>
+          <br>
+          <h2>If you have a painting style</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p>level of finish <select><option>sketch</option><option>refined sketch</option><option>flat color</option><option>speedpaint</option><option>detailed painting</option></select></p>
+          <p>Background Detail <select><option>no or minimal background</option><option>simple background</option><option>simple scene</option><option>detailed scene</option></select></p>
+        </div>
+        <div class="col-md-6">
+          <blockquote>
+            <p>total points = [x(number of characters)*(amount of character shown) + (background detail)]*(painting multiplier)</p>
+          </blockquote>
+        </div>
+      </div>
+          <br>
+          <h2>OR</h2>
+          <br>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Pixels</h2>
+          <p>Level of finish<select><option>lines</option><option>flat color</option><option>shaded</option></select></p>
+          <p>Background Detail <select><option>no or minimal background</option><option>simple background</option><option>simple scene</option></select></p>
+          <p>Size<select><option>50x50px or less</option><option>100x100px or less</option><option>250x250px or less</option><option>larger than 250x250px</option></select></p>
+        </div>
+        <div class="col-md-6">
+          <blockquote>
+            <p>total points = [x(number of characters)*(amount of character shown) + (background detail)]*(pixel multiplier)*(size modifier)</p>
+          </blockquote>
+        </div>
+      </div>
+          <br>
+          <h2>AND IF</h2>
+          <br>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Animation</h2> <select><option>blink/bounce</option><option>other simple</option><option>complex</option></select>
+        </div>
+        <div class="col-md-6">
+          <blockquote>
+            <p>take above equation based on style and multiply by animation modifier</p>
+          </blockquote>
+        </div>
+      </div>
+      </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
